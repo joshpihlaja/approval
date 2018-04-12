@@ -4,11 +4,11 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import { User } from '../models/User';
 import { Login } from '../models/Login';
-import { Tracker } from '../models/Tracker';
-import { Question } from '../models/Question';
-import { UserAnswer } from '../models/UserAnswer';
+//import { Tracker } from '../models/Tracker';
+//import { Question } from '../models/Question';
+//import { UserAnswer } from '../models/UserAnswer';
 import { Contact } from '../models/Contact';
-import { LifeTile } from '../models/LifeTile';
+//import { LifeTile } from '../models/LifeTile';
 
 import { Injectable } from '@angular/core';
 
@@ -52,18 +52,18 @@ export class ApiService {
 		return this._PostJson("/UserAPI/ClearUserData", { user: user });
 	}
 
-	public SaveLifeTracker(tracker: Tracker): any {
-		return this._PostJson("/UserAPI/SaveUserLifeTracker", { user: tracker.User, mood: tracker.Mood, activity: tracker.Activity, other: tracker.Other });
-	}
+	//public SaveLifeTracker(tracker: Tracker): any {
+	//	return this._PostJson("/UserAPI/SaveUserLifeTracker", { user: tracker.User, mood: tracker.Mood, activity: tracker.Activity, other: tracker.Other });
+	//}
 
-	public SaveUserAnswer(user: User, answer: UserAnswer, question: Question, lifeTile: LifeTile) {
-		return this._PostJson("/LifeTileAPI/SaveUserAnswer", { user: user, answer: answer, question: question, lifeTile: lifeTile });
-	}
+	//public SaveUserAnswer(user: User, answer: UserAnswer, question: Question, lifeTile: LifeTile) {
+	//	return this._PostJson("/LifeTileAPI/SaveUserAnswer", { user: user, answer: answer, question: question, lifeTile: lifeTile });
+	//}
 
-	public SaveUserAnswers(user: User, answers: UserAnswer[], question: Question, lifeTile: LifeTile) {
+	//public SaveUserAnswers(user: User, answers: UserAnswer[], question: Question, lifeTile: LifeTile) {
 
-		return this._PostJson("/LifeTileAPI/SaveUserAnswers", { userID: user.Id, answers: answers, questionID: question.Id, lifeTileID: lifeTile.Id });
-	}
+	//	return this._PostJson("/LifeTileAPI/SaveUserAnswers", { userID: user.Id, answers: answers, questionID: question.Id, lifeTileID: lifeTile.Id });
+	//}
 
 	public SaveUserContact(user: User, contact: Contact) {
 		return this._PostJson("/UserAPI/SaveUserContact", { user: user, contact: contact });
