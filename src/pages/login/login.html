@@ -1,0 +1,25 @@
+
+<ion-content text-center  padding class="vertical-align-content">
+
+	<div ion-fixed class="login-box">
+		<div class="title">Crew<span class="text-italic">Care</span></div>
+		<ion-item>
+			<ion-label floating>Username</ion-label>
+			<ion-input type="text"  [(ngModel)]="UserLogin.Username" name="Username"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label floating>Password</ion-label>
+			<ion-input type="password"  [(ngModel)]="UserLogin.Password" name="Password"></ion-input>
+		</ion-item>
+		<ion-item class="no-border">
+			<ion-label>Remember me</ion-label>
+			<ion-toggle checked="false" [(ngModel)]="rememberMe"></ion-toggle>
+		</ion-item>
+		<ion-item class="no-border">
+			<ion-label (click)="ForgotPassword()">Forgot Password?</ion-label>
+		</ion-item>
+		<br />
+		<button ion-button (click)="DoLogin()">LOGIN</button>
+		<button ion-button (click)="DoCancel()">CANCEL</button>
+	</div>
+</ion-content>
