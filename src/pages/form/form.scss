@@ -5,4 +5,23 @@ page-form {
         padding-left: 10px;
         border-radius: 5px;
         } 
+	.actions-footer{
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		padding-right: 20px;
+	}
+	.button-ios {
+		width: 48%;
+	}
+	#approve{
+		background-color: green !important;
+		margin-right: 5px;
+	}
+	#deny{
+		background-color: red !important;
+	}
+	.alert-button{
+		background-color: #2A4C6E;
+	}
 }

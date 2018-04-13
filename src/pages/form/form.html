@@ -1,13 +1,15 @@
-﻿
-<ion-content>
-    <ion-title>Job Forms</ion-title>
+﻿<ion-header>
+	<ion-navbar>
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title><div class="main-logo"></div></ion-title>
+	</ion-navbar>
+</ion-header>
 
-		<ion-list>
-			<div class="list" style="padding: 10px;">
-
-
-
-                <form class="form-horizontal" role="form">
+<ion-content padding>
+			<div class="list">
+				<form class="form-horizontal" role="form">
 
 
                     <div class="form-group fb_form_header">
@@ -1246,6 +1248,7 @@
 
 
 			</div>
-		</ion-list>
-
+	<div class="actions-footer">
+		<button ion-button  id="deny" large color="danger" (click)="deny()">Decline</button><button id="approve" ion-button large color="secondary" (click)="approve();">Approve</button>
+	</div>
 </ion-content>
