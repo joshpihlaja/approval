@@ -5,14 +5,14 @@
 export class JobForm  {
 	public Id: string;
 
-	public Form_Name: string;
+	public form_name: string;
 
-	public Job_Name: string;
+	public job_title: string;
 
-	public CreatedOn: string;
+	public completed_on: string;
 
-	public Next_Approver: string;
+	public next_approver: string;
 
-	public Originator: string;
+	public originator: string;
 	
 }

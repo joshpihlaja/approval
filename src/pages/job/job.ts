@@ -1,5 +1,5 @@
 ﻿import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, LoadingController } from 'ionic-angular';
 
 import { JobService } from '../job/JobService';
 import { FormPage } from '../form/form';
@@ -13,6 +13,7 @@ import { JobForm } from '../../models/JobForm';
 export class JobPage {
     jobs: JobForm[];
     constructor(public navCtrl: NavController,
+        public loadingCtrl: LoadingController,
         private _JobService: JobService)
     {
         this.jobs = [];
@@ -23,30 +24,16 @@ export class JobPage {
         this.getJobForms(1);    
     }
 
-	getJobForms(userID) {
-		let job = new JobForm();
+    getJobForms(userID) {
+        let loading = this.loadingCtrl.create({
+            content: 'Please wait...'
+        });
+        loading.present();
 
-		job.Job_Name = 'Software Developer';
-		job.Form_Name = 'Approval Form';
-		job.Next_Approver = 'Cole Knutson';
-		job.Originator = 'Kyle Olson';
-		job.CreatedOn = '04/13/2018';
-
-		this.jobs.push(job);
-
-		job = new JobForm();
-
-		job.Job_Name = 'Project Manager';
-		job.Form_Name = 'Approval Form';
-		job.CreatedOn = '04/13/2018';
-		job.Next_Approver = 'Nate Schweigert';
-		job.Originator = 'Peter Hanson';
-
-		this.jobs.push(job);
-        /*this._JobService.getJobForms(userID).subscribe(data => {
-            console.log("data", data);
+        this._JobService.getJobForms(userID).subscribe(data => {
             this.jobs = data;
-        });*/
+            loading.dismiss();
+        });
 	}
 
 	public ViewForm(job: JobForm): void {
