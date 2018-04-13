@@ -21,14 +21,14 @@ export class JobService {
     }
 
     public getJobForms(userID) {
-        return this._GetJson("ws/Form.asmx/getUserJobFormsForApproval?userID=" + userID +"&API_KEY=03DAC006-B069-E311-B7A4-0017A4770044");
+        return this._GetJson("ws/v2/api/approval/getJobForms/"+userID+"/03DAC006-B069-E311-B7A4-0017A4770044");
     }
 
     protected _GetJson(url: string): any {
 		let ref = this.Ref(url);
 		
-        return this._Http.get(ref);
-			//.map(res => res.json());
+        return this._Http.get(ref)
+			.map(res => res.json());
 	}
 
 	protected _PostJson(url: string, args: any): any {
