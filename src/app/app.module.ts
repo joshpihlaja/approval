@@ -17,7 +17,8 @@ import { FormPage } from '../pages/form/form';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { JobService } from '../pages/job/JobService'
+import { JobService } from '../pages/job/JobService';
+import { FormService } from '../pages/form/FormService';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { JobService } from '../pages/job/JobService'
       StatusBar,
       SplashScreen,
       JobService,
+      FormService,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     
   ]
