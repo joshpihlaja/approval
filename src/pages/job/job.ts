@@ -2,6 +2,7 @@
 import { NavController } from 'ionic-angular';
 
 import { JobService } from '../job/JobService';
+import { FormPage } from '../form/form';
 
 import { JobForm } from '../../models/JobForm';
 
@@ -46,7 +47,11 @@ export class JobPage {
             console.log("data", data);
             this.jobs = data;
         });*/
-    }
+	}
+
+	public ViewForm(job: JobForm): void {
+		this.navCtrl.push(FormPage, { jobID: job.Id });
+	}
 
 
 }

@@ -12,6 +12,7 @@ import { ApplicantPage } from '../pages/applicant/applicant';
 import { JobPage } from '../pages/job/job';
 import { PositionPage } from '../pages/position/position';
 import { ProspectPage } from '../pages/prospect/prospect';
+import { FormPage } from '../pages/form/form';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -28,7 +29,8 @@ import { JobService } from '../pages/job/JobService'
     ApplicantPage,
     JobPage,
     PositionPage,
-    ProspectPage
+	 ProspectPage,
+	FormPage
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,8 @@ import { JobService } from '../pages/job/JobService'
     ApplicantPage,
     JobPage,
     PositionPage,
-    ProspectPage
+	  ProspectPage,
+	FormPage
   ],
   providers: [
       StatusBar,
