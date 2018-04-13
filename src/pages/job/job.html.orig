@@ -1,0 +1,24 @@
+﻿
+<ion-content text-center>
+    <ion-title>Job Form</ion-title>
+
+		<ion-list>
+			<div class="list">
+				<ion-item *ngFor="let job of jobs" href="#" class="item item-complex">
+<<<<<<< 68afe9ef42f1f0207edc94906bb976152053985c
+					<h2>{{ job.Job_Name }} - {{job.Form_Name}}</h2>
+					<sub>Originator: <strong>{{job.Originator}}</strong> {{job.CreatedOn}}</sub><br />
+					<sub>Next Approver: <strong>{{job.Next_Approver}}</strong></sub>
+
+					<button ion-button clear item-end (click)="ViewForm(job);">View</button>
+=======
+					<h2>{{ job.job_title }} - {{job.form_name}}</h2>
+					<sub>Originator: <strong>{{job.originator}}</strong> {{job.completed_on}}</sub><br />
+					<sub>Next Approver: <strong>{{job.next_approver}}</strong></sub>
+					
+>>>>>>> html
+				</ion-item>
+			</div>
+		</ion-list>
+
+</ion-content>

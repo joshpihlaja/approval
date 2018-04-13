@@ -1,5 +1,7 @@
 ﻿import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, LoadingController} from 'ionic-angular';
+
+import { FormService } from '../form/FormService';
 
 import { JobForm } from '../../models/JobForm';
 
@@ -9,30 +11,27 @@ import { JobForm } from '../../models/JobForm';
 })
 export class FormPage {
     job: JobForm;
-    constructor(public navCtrl: NavController)
+    constructor(public navCtrl: NavController,
+        public loadingCtrl: LoadingController,
+        private _FormService: FormService    )
     {
         this.job = new JobForm();
+        
 
     }
 
-    ngOnInit(): void {
-		this.getJobForm(1);
-    }
+ //   ngOnInit(): void {
+	//	this.getForm(1);
+ //   }
 
-	private getJobForm(id): void {
-		this.job = new JobForm();
+	//private getForm(id): void {
+        
 
-		this.job.Job_Name = 'Software Developer';
-		this.job.Form_Name = 'Approval Form';
-		this.job.Next_Approver = 'Cole Knutson';
-		this.job.Originator = 'Kyle Olson';
-		this.job.CreatedOn = '04/13/2018';
-
-        /*this._JobService.getJobForms(userID).subscribe(data => {
-            console.log("data", data);
-            this.jobs = data;
-        });*/
-    }
+ //       this._FormService.getForm(12757).subscribe(data => {
+ //           console.log("data", data);
+ //           this.job = data;
+ //       });
+ //   }
 
 
 }

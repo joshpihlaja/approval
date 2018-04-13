@@ -4,13 +4,1247 @@
 
 		<ion-list>
 			<div class="list">
-				<ion-item *ngFor="let job of jobs" href="#" class="item item-complex">
-					<h2>{{ job.Job_Name }} - {{job.Form_Name}}</h2>
-					<sub>Originator: <strong>{{job.Originator}}</strong> {{job.CreatedOn}}</sub><br />
-					<sub>Next Approver: <strong>{{job.Next_Approver}}</strong></sub>
 
-					<button ion-button clear item-end>View</button>
-				</ion-item>
+
+
+                <form class="form-horizontal" role="form">
+
+
+                    <div class="form-group fb_form_header">
+                        <h1>Job Approval Form</h1>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-3"><h2>Posting Details</h2></div>
+
+                        <div class="col-sm-9"><h3>(Step 1 of 2)</h3></div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <h3></h3>
+                    </div>
+
+
+                    <div class="form-group">
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="question">Pay Rate:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        555.55
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </table>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="title">Title Test:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        TESt merge field job
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="job_id">Job ID:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        10037
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="req_code">Requisition:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        W1600010
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="job_code">Job Code:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Code456
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="job_category_id">Category:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Marketing
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="location_id">Location:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="job_function">Job Function:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="org_code">Organization Code:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="organization_id_display">Organization Name:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="org_code_description">Organization Display Name:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="department_id">Department:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="internal_hires">Hire Type:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        External
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="contact_id_display">Contact:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        * DeMars, * Jeff
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="display_job_contact_display">Display Job Contact:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Yes
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="opened_date">Opened Date:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        04/13/2015
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="closed_date">Closed Date:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        04/15/2015
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="desired_start_date">Desired Start Date:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="key_words">Core Competencies:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="short_description">Short Description:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        <p><span style="color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none;">We are currently seeking to grow our software development teams in multiple areas. This is a great opportunity for a dynamic software professional.</span></p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="long_description">Long Description:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        <p>&nbsp;</p><br /><br /><p><span style="color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none;">ImageTrend, Inc. is a fast-paced, award-winning software development company focused on streamlining business processes through the implementation of comprehensive Web and client-based solutions. We are currently seeking a dynamic software professional to assist in the development, deployment and maintenance of our applications.</span></p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="duties">Duties:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        <ul style="margin: 0px; padding: 0px; list-style: none; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc;">Time and resource management throughout the development lifecycle</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc;">Develop scalable software solutions for multiple clients in a variety of industries</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc;">Support new as well as existing client relationships by identifying and resolving potential defects, while concurrently maintaining a uniform code base common to all customers</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc;">Will have the opportunity to work on many new and exciting projects that involve everything from a client-based WPF application to an ASP.Net MVC HTML5 mobile site</li><br /></ul>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="Qualifications">Qualifications:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        <ul><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Bachelor’s degree in Computer Science, Computer &amp; Information Science, Management Information Systems, or related field</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">2 years experience in a software production environment preferred</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Experience in&nbsp;C#, SQL Server and&nbsp;Visual Studio required</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Experience with Javascript, ASP.NET MVC, and HTML5 preferred</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Excellent communication skills and ability to work well in team atmosphere</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Strong analytical and problem solving capabilities</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Demonstrated quality approach to the software development process</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Ability to work in a demanding and challenging environment</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Displays strong abilities to learn new technologies and acquire new skills through independent study, professional training and senior team members</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Highly motivated, proactive personality</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Ability to produce with minimal supervision</li><br /></ul>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="Shift">Shift Type:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Full-time
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="shift_hours">Shift Hours:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        8-5
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="hours_per_week">Hours Per Week:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        40
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="travel_percent">Travel Percentage:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        5
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="duration">Duration:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Forever
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="opportunity_type">Opportunity Type:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="job_type">Job Type:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="degree_type">Degree Type:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Baccalaureate Degree
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="min_years_experience">Minimum Years Experience:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="desired_years_experience">Desired Years Experience:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="salary_type">Salary Type:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Annually
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="salary_lower">Salary Lower:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        10
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="salary_upper">Salary Upper:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        20
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="hiring_manager_id_display">Hiring Manager:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Hagel, Micheal
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="coordinator_id_display">Coordinator:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Fox, Jimmy
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="recruiter_id">Recruiters:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        * Andy * Pittman, caltest caltest, Laura Schirer
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="committee_members">Committee Members:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Josh Pihlaja
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="alert_packages">Alert Package:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Basic
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="trigger_configuration">Workflow Configuration:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Faculty
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="reference_notification_send_on_trigger_function">Send Reference Notification:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Manually only (either from a bulk action or from the applicants reference list page)
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="reference_notification_settings_id">Reference Notification Setting:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Another Setup
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="form_packages">Applicant Form Packages:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Developer Package
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="prescreenQuestionsIDs">Pre-Screening Questions:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </table>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="col-sm-3"><h2>Job Duties</h2></div>
+
+                        <div class="col-sm-9"><h3>(Step 2 of 2)</h3></div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <h3>Job Duties</h3>
+                    </div>
+
+
+                    <div class="form-group">
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="title">Title Test:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        TESt merge field job
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="job_id">Job ID:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        10037
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="req_code">Requisition:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        W1600010
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="job_code">Job Code:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Code456
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="job_category_id">Category:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Marketing
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="location_id">Location:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="job_function">Job Function:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="org_code">Organization Code:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="organization_id_display">Organization Name:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="org_code_description">Organization Display Name:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="department_id">Department:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="internal_hires">Hire Type:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        External
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="contact_id_display">Contact:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        * DeMars, * Jeff
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="display_job_contact_display">Display Job Contact:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Yes
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="opened_date">Opened Date:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        04/13/2015
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="closed_date">Closed Date:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        04/15/2015
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="desired_start_date">Desired Start Date:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="key_words">Core Competencies:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="short_description">Short Description:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        <p><span style="color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none;">We are currently seeking to grow our software development teams in multiple areas. This is a great opportunity for a dynamic software professional.</span></p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="long_description">Long Description:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        <p>&nbsp;</p><br /><br /><p><span style="color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none;">ImageTrend, Inc. is a fast-paced, award-winning software development company focused on streamlining business processes through the implementation of comprehensive Web and client-based solutions. We are currently seeking a dynamic software professional to assist in the development, deployment and maintenance of our applications.</span></p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="duties">Duties:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        <ul style="margin: 0px; padding: 0px; list-style: none; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc;">Time and resource management throughout the development lifecycle</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc;">Develop scalable software solutions for multiple clients in a variety of industries</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc;">Support new as well as existing client relationships by identifying and resolving potential defects, while concurrently maintaining a uniform code base common to all customers</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc;">Will have the opportunity to work on many new and exciting projects that involve everything from a client-based WPF application to an ASP.Net MVC HTML5 mobile site</li><br /></ul>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="Qualifications">Qualifications:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        <ul><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Bachelor’s degree in Computer Science, Computer &amp; Information Science, Management Information Systems, or related field</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">2 years experience in a software production environment preferred</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Experience in&nbsp;C#, SQL Server and&nbsp;Visual Studio required</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Experience with Javascript, ASP.NET MVC, and HTML5 preferred</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Excellent communication skills and ability to work well in team atmosphere</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Strong analytical and problem solving capabilities</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Demonstrated quality approach to the software development process</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Ability to work in a demanding and challenging environment</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Displays strong abilities to learn new technologies and acquire new skills through independent study, professional training and senior team members</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Highly motivated, proactive personality</li><br />	<li style="margin: 0px 0px 4px 20px; padding: 0px; list-style-type: disc; color: rgb(66, 66, 66); font-family: 'PT Sans', 'Helvetica Neue', Helvetical, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Ability to produce with minimal supervision</li><br /></ul>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="Shift">Shift Type:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Full-time
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="shift_hours">Shift Hours:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        8-5
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="hours_per_week">Hours Per Week:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        40
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="travel_percent">Travel Percentage:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        5
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="duration">Duration:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Forever
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="opportunity_type">Opportunity Type:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="job_type">Job Type:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="degree_type">Degree Type:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Baccalaureate Degree
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="min_years_experience">Minimum Years Experience:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="desired_years_experience">Desired Years Experience:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="salary_type">Salary Type:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Annually
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="salary_lower">Salary Lower:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        10
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="salary_upper">Salary Upper:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        20
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="hiring_manager_id_display">Hiring Manager:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Hagel, Micheal
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="coordinator_id_display">Coordinator:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Fox, Jimmy
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="recruiter_id">Recruiters:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        * Andy * Pittman, caltest caltest, Laura Schirer
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="committee_members">Committee Members:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Josh Pihlaja
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="alert_packages">Alert Package:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Basic
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="trigger_configuration">Workflow Configuration:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Faculty
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="reference_notification_send_on_trigger_function">Send Reference Notification:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Manually only (either from a bulk action or from the applicants reference list page)
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="reference_notification_settings_id">Reference Notification Setting:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Another Setup
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer">
+                                <label class="col-sm-4 control-label" for="form_packages">Applicant Form Packages:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        Developer Package
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="control-group fb_answer" style="display:none;">
+                                <label class="col-sm-4 control-label" for="prescreenQuestionsIDs">Pre-Screening Questions:</label>
+                                <div class="col-sm-8">
+
+
+                                    <div id="readonly_answer" class="form-control-static">
+                                        &nbsp;
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </table>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="fb_approver_header"><h3>Approvers</h3></div>
+                        <div class="hidden-xs table">
+                            <div class="col-sm-3">Position</div>
+                            <div class="col-sm-3">Name</div>
+                            <div class="col-sm-3">Status</div>
+                            <div class="col-sm-3">Date</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="visible-xs col-xs-3">Position:</div>
+                            <div class="col-xs-9 col-sm-3">
+
+                                Originator
+
+                            </div>
+                            <div class="visible-xs col-xs-3">Name:</div>
+                            <div class="col-xs-9 col-sm-3">System Admin</div>
+                            <div class="visible-xs col-xs-3">Status:</div>
+
+                            <div class="col-xs-9 col-sm-3">&nbsp;</div>
+                            <div class="visible-xs col-xs-3">Date:</div>
+                            <div class="col-xs-9 col-sm-3">&nbsp;</div>
+
+                            <div class="visible-xs col-xs-12">&nbsp;</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="visible-xs col-xs-3">Position:</div>
+                            <div class="col-xs-9 col-sm-3">
+                                Director
+                            </div>
+                            <div class="visible-xs col-xs-3">Name:</div>
+                            <div class="col-xs-9 col-sm-3">&nbsp;</div>
+                            <div class="visible-xs col-xs-3">Status:</div>
+
+                            <div class="col-xs-9 col-sm-3">&nbsp;</div>
+                            <div class="visible-xs col-xs-3">Date:</div>
+                            <div class="col-xs-9 col-sm-3">&nbsp;</div>
+
+                            <div class="visible-xs col-xs-12">&nbsp;</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="visible-xs col-xs-3">Position:</div>
+                            <div class="col-xs-9 col-sm-3">
+                                Hiring Manager
+                            </div>
+                            <div class="visible-xs col-xs-3">Name:</div>
+                            <div class="col-xs-9 col-sm-3">&nbsp;</div>
+                            <div class="visible-xs col-xs-3">Status:</div>
+
+                            <div class="col-xs-9 col-sm-3">&nbsp;</div>
+                            <div class="visible-xs col-xs-3">Date:</div>
+                            <div class="col-xs-9 col-sm-3">&nbsp;</div>
+
+                            <div class="visible-xs col-xs-12">&nbsp;</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="visible-xs col-xs-3">Position:</div>
+                            <div class="col-xs-9 col-sm-3">
+                                Level 1
+                            </div>
+                            <div class="visible-xs col-xs-3">Name:</div>
+                            <div class="col-xs-9 col-sm-3">&nbsp;</div>
+                            <div class="visible-xs col-xs-3">Status:</div>
+
+                            <div class="col-xs-9 col-sm-3">&nbsp;</div>
+                            <div class="visible-xs col-xs-3">Date:</div>
+                            <div class="col-xs-9 col-sm-3">&nbsp;</div>
+
+                            <div class="visible-xs col-xs-12">&nbsp;</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="visible-xs col-xs-3">Position:</div>
+                            <div class="col-xs-9 col-sm-3">
+                                Level 3 Position
+                            </div>
+                            <div class="visible-xs col-xs-3">Name:</div>
+                            <div class="col-xs-9 col-sm-3">&nbsp;</div>
+                            <div class="visible-xs col-xs-3">Status:</div>
+
+                            <div class="col-xs-9 col-sm-3">&nbsp;</div>
+                            <div class="visible-xs col-xs-3">Date:</div>
+                            <div class="col-xs-9 col-sm-3">&nbsp;</div>
+
+                            <div class="visible-xs col-xs-12">&nbsp;</div>
+                        </div>
+
+                    </div>
+
+                </form>
+
+
 			</div>
 		</ion-list>
 
