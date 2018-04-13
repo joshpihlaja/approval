@@ -2,11 +2,16 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+import { HTTP } from '@ionic-native/http';
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
+import { ApplicantPage } from '../pages/applicant/applicant';
+import { JobPage } from '../pages/job/job';
+import { PositionPage } from '../pages/position/position';
+import { ProspectPage } from '../pages/prospect/prospect';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,7 +22,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-	LoginPage
+    LoginPage,
+    ApplicantPage,
+    JobPage,
+    PositionPage,
+    ProspectPage
   ],
   imports: [
     BrowserModule,
@@ -28,8 +37,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     AboutPage,
     ContactPage,
-	 HomePage,
-	LoginPage
+	HomePage,
+      LoginPage,
+      ApplicantPage,
+      JobPage,
+      PositionPage,
+    ProspectPage
   ],
   providers: [
     StatusBar,

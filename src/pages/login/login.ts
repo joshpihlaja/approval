@@ -12,7 +12,7 @@ import { User } from '../../models/User';
 //import { MobileData } from '../../models/MobileData';
 
 //import { WelcomePage } from '../welcome/welcome';
-//import { TabsPage } from '../tabs/tabs';*/
+import { JobPage } from '../job/job';
 
 @Component({
 	selector: 'page-login',
@@ -30,7 +30,7 @@ export class LoginPage {
 		//public lifeTileHelper: LifeTileHelper,
 		public navCtrl: NavController,
 		public alertCtrl: AlertController,
-		public loadingCtrl: LoadingController,
+		public loadingCtrl: LoadingController
 		//private storage: Storage,
 		//public keyboard: Keyboard,
 		//public userHelper: UserHelper
@@ -59,7 +59,8 @@ export class LoginPage {
 			content: 'Please wait...'
 		});
 		loading.present();
-
+        this.navCtrl.push(JobPage);
+        loading.dismiss();
 
 
 		//this._ApiService.LoginMobileUser(this.UserLogin).subscribe(
