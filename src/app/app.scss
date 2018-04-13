@@ -14,3 +14,30 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.logo {
+	height: 45px;
+    width: 235px;
+    margin: 0 auto;
+    display: block;
+    background-image: url(../assets/imgs/logo.png) !important;
+	background-repeat: no-repeat;
+    margin-top: 15px;
+}
+
+* {
+	color: #345179;
+}
+
+.button-inner {
+	color: #fff;
+}
+
+.scroll-content {
+	background-color: #2A4C6E;
+}
+
+.button-ios {
+	background-color: #345179;
+	color: #fff;
+}

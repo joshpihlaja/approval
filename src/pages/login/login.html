@@ -2,7 +2,7 @@
 <ion-content text-center  padding class="vertical-align-content">
 
 	<div ion-fixed class="login-box">
-		<div class="title">HireTouch <span class="text-italic"></span></div>
+		<div class="title"><div class="logo"></div></div>
 		<ion-item>
 			<ion-label floating>Username</ion-label>
 			<ion-input type="text"  [(ngModel)]="UserLogin.Username" name="Username"></ion-input>
@@ -10,13 +10,6 @@
 		<ion-item>
 			<ion-label floating>Password</ion-label>
 			<ion-input type="password"  [(ngModel)]="UserLogin.Password" name="Password"></ion-input>
-		</ion-item>
-		<ion-item class="no-border">
-			<ion-label>Remember me</ion-label>
-			<ion-toggle checked="false" [(ngModel)]="rememberMe"></ion-toggle>
-		</ion-item>
-		<ion-item class="no-border">
-			<ion-label (click)="ForgotPassword()">Forgot Password?</ion-label>
 		</ion-item>
 		<br />
 		<button ion-button (click)="DoLogin()">LOGIN</button>
