@@ -59,7 +59,7 @@ export class LoginPage {
 			content: 'Please wait...'
 		});
 		loading.present();
-        this.navCtrl.push(JobPage);
+        this.navCtrl.setRoot(JobPage);
         loading.dismiss();
 
 

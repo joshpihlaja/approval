@@ -1,7 +1,13 @@
-﻿
-<ion-content text-center>
-    <ion-title>Job Form</ion-title>
+﻿<ion-header>
+	<ion-navbar>
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title><div class="main-logo"></div></ion-title>
+	</ion-navbar>
+</ion-header>
 
+<ion-content text-center padding>
 		<ion-list>
 			<div class="list">
 				<ion-item *ngFor="let job of jobs" href="#" class="item item-complex">
