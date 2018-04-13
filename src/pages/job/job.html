@@ -1,8 +1,16 @@
 ﻿
 <ion-content text-center>
-    <div> Job Forms</div>
-    <!--<div *ngFor="let job of jobs">
-        {{ job.title }}
-    </div>-->
+    <ion-title>Job Forms</ion-title>
+
+		<ion-list>
+			<div class="list">
+				<ion-item *ngFor="let job of jobs" href="#" class="item item-complex">
+					<h2>{{ job.Job_Name }} - {{job.Form_Name}}</h2>
+					<sub>Originator: <strong>{{job.Originator}}</strong> {{job.CreatedOn}}</sub><br />
+					<sub>Next Approver: <strong>{{job.Next_Approver}}</strong></sub>
+					
+				</ion-item>
+			</div>
+		</ion-list>
 
 </ion-content>
