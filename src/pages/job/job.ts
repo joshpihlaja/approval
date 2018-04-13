@@ -8,10 +8,11 @@ import { JobService } from '../job/JobService';
     templateUrl: 'job.html'
 })
 export class JobPage {
-    jobs: any = {};
+    jobs: any = [];
     constructor(public navCtrl: NavController,
         private _JobService: JobService)
-    {    
+    {
+        this.jobs = [];
 
     }
 
@@ -21,6 +22,7 @@ export class JobPage {
 
     getJobForms(userID) {
         this._JobService.getJobForms(userID).subscribe(data => {
+            console.log("data", data);
             this.jobs = data;
         });
     }

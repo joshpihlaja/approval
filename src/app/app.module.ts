@@ -2,7 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { Http, Headers } from '@angular/http';
+import { HttpModule } from '@angular/http';
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
@@ -15,6 +15,8 @@ import { ProspectPage } from '../pages/prospect/prospect';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
+import { JobService } from '../pages/job/JobService'
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -38,16 +41,18 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
 	HomePage,
-      LoginPage,
-      ApplicantPage,
-      JobPage,
-      PositionPage,
+    LoginPage,
+    ApplicantPage,
+    JobPage,
+    PositionPage,
     ProspectPage
   ],
   providers: [
-    StatusBar,
-    SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+      StatusBar,
+      SplashScreen,
+      JobService,
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    
   ]
 })
 export class AppModule {}
